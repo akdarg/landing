@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es" translate="no">
+  <head>
+    <meta name="google" content="notranslate">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap-modal.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='manifest' href='manifest.json'>
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icono144.png">
+
+    <title>Mi Claro</title>
+  </head>
+  <body>
+
+    <div class="msg-modal" id="msgModal" style="display: none;">
+      <span class="close-btn"><img src="images/icon-close.png" srcset="images/icon-close@2x.png 2x" alt="Cerrar"></span>
+      <div class="row">
+        <div class="col">
+          <a data-toggle="modal" data-target="#modal-inicio">
+            <img src="images/gf-acceso-rapido.png" srcset="images/gf-acceso-rapido@2x.png 2x" alt="Mi Claro" class="gf-acceso-rapido">
+          </a>
+        </div>
+        <div class="col col-der">
+          <p>¡Mi Claro tiene un nuevo <b>acceso rápido</b>!</p>
+          <a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-inicio">Agregar ícono</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-inicio" tabindex="-1" role="dialog" aria-labelledby="modal-inicio-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <span class="close-btn" data-dismiss="modal"><img src="images/icon-close.png" srcset="images/icon-close@2x.png 2x" alt="Cerrar"></span>
+          <div class="modal-body">
+            
+            <img src="images/gf-acceso-rapido.png" srcset="images/gf-acceso-rapido@2x.png 2x" alt="Mi Claro" class="gf-acceso-rapido">
+            <h3 class="title">Agregar Mi Claro<br>a tu inicio</h3>
+            <ul class="msg-list" id="steps-ios" style="display: none">
+              <li><img src="images/icon-num-1.png" srcset="images/icon-num-1@2x.png 2x" alt="1" class="icon-num"> Ingresa al sitio usando Safari, luego seleccioná en la barra inferior de tu iPhone, el botón de “Compartir”</li>
+              <li><img src="images/icon-num-2.png" srcset="images/icon-num-2@2x.png 2x" alt="2" class="icon-num"> Buscá “Agregar a inicio”</li>
+              <li><img src="images/icon-num-3.png" srcset="images/icon-num-3@2x.png 2x" alt="3" class="icon-num"> Presioná “Agregar” y listo!</li>
+            </ul>
+            <ul class="msg-list" id="steps-android">
+              <li><img src="images/icon-num-1.png" srcset="images/icon-num-1@2x.png 2x" alt="1" class="icon-num"> Ingresa al menú de opciones de tu navegador</li>
+              <li><img src="images/icon-num-2.png" srcset="images/icon-num-2@2x.png 2x" alt="2" class="icon-num"> Buscá "Agregar a inicio" o "Agregar a pantalla principal"</li>
+              <li><img src="images/icon-num-3.png" srcset="images/icon-num-3@2x.png 2x" alt="3" class="icon-num"> Presioná "Agregar" y listo!</li>
+            </ul>
+            <button type="button" class="btn btn-primary btn-cta" data-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-miclaro">
+      <a href="https://www.claro.com.ar" target="_blank" class="brand"><img src="images/claro-logo.png" srcset="images/claro-logo@2x.png 2x" alt="Claro"></a>
+      <a href="LINK_MIMO_REGISTRAR" id="btn-crear" class="btn btn-primary" style="display: none;">Crear tu usuario</a>
+    </nav>
+    <section id="section-home" class="section-home page-scroll">
+      <div class="container">
+        <div class="content animate__animated animate__fadeIn">
+          <h1 class="title">Tu canal de<br>autogestión</h1>
+          <!-- <p class="description">Todos tus servicios de Claro,<br>a tu disposición y sin gastar datos</p> -->
+          <p class="description">En <b>Mi Claro</b> tenés todos tus servicios<br>a disposición y sin gastar datos</p>
+          <a href="LINK_MIMO_REGISTRAR" class="btn btn-cta">Crear tu usuario</a>
+          <a href="LINK_MIMO_INGRESAR" class="btn btn-link">Entrar Ahora</a>
+        </div>
+        <div class="phone animate__animated animate__fadeInUp">
+          <div class="phone-device">
+            <div class="gf-circle-red animate__animated animate__zoomIn"></div>
+            <img src="images/iphone-mockup.png" srcset="images/iphone-mockup@2x.png 2x" alt="Mi Claro" class="img-phone-device">  
+            <img src="images/iphone-mockup-desktop.png" srcset="images/iphone-mockup-desktop@2x.png 2x" alt="Mi Claro" class="img-phone-device-desktop">  
+            <div class="phone-screen">
+              <img src="images/AR.png" srcset="images/AR.png 2x" alt="Mi Claro App" class="img-phone-screen" style="width: 239px;">
+              <img src="images/AR.png" srcset="images/AR.png 2x" alt="Mi Claro App" class="img-phone-screen-desktop"  style="width: 292px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-slider" class="page-scroll">
+      <div class="carousel-container">
+
+        <div class="hero" data-arrows="true" data-autoplay="true">
+        
+          <div class="hero-slide slide-01">
+            <figure class="fig-graphics">
+              <div class="phone">
+                <div class="phone-device">
+                  <div class="gf-plus-black"></div>
+                  <div class="gf-dash-vertical"></div>
+                  <div class="gf-dash-horizontal"></div>
+                  <div class="gf-circle-red"></div>
+                  <div class="phone-screen">
+                    <img src="images/gf-circular-icons.png" srcset="images/gf-circular-icons@2x.png 2x" alt="Mi Consumo" class="gf-circular-icons">
+                  </div>
+                  <img src="images/iphone-mockup.png" srcset="images/iphone-mockup@2x.png 2x" alt="Mi Claro" class="img-phone-device">  
+                </div>
+              </div>
+            </figure>
+            <figure class="fig-text">
+              <h4 class="subtitle">Mi Consumo</h4>
+              <h2 class="title">Conocé cuanto<br>tenés para hablar,<br>navegar y mensajear</h2>
+            </figure>
+          </div>
+        
+          <div class="hero-slide slide-02">
+            <figure class="fig-graphics">
+              <div class="phone">
+                <div class="phone-device">
+                  <div class="gf-plus-black"></div>
+                  <div class="gf-plus-red"></div>
+                  <div class="gf-dash-vertical"></div>
+                  <div class="gf-dash-horizontal"></div>
+                  <img src="images/iphone-mockup.png" srcset="images/iphone-mockup@2x.png 2x" alt="Mi Claro" class="img-phone-device">  
+                  <div class="phone-screen">
+                    <img src="images/gf-factura.png" srcset="images/gf-factura@2x.png 2x" alt="Mi Factura" class="gf-factura">
+                  </div>
+                  <img src="images/gf-credit-card.png" src="images/gf-credit-card@2x.png 2x" alt="Mi Factura" class="gf-credit-card">
+                </div>
+                
+              </div>
+            </figure>
+            <figure class="fig-text">
+              <h4 class="subtitle">Mi Factura</h4>
+              <h2 class="title">Pagá tus<br>facturas online</h2>
+              <p class="arrow-text"><img src="images/gf-arrow-text.png" srcset="images/gf-arrow-text@2x.png 2x" alt="Con tarjeta de Crédito o Visa Débito"> Con tarjeta de Crédito o Visa Débito</p>
+            </figure>
+          </div>
+        
+          <div class="hero-slide slide-03">
+            <figure class="fig-graphics">
+              <div class="phone">
+                <div class="phone-device">
+                  <div class="gf-plus-black"></div>
+                  <div class="gf-plus-red"></div>
+                  <div class="gf-dash-vertical"></div>
+                  <div class="gf-dash-horizontal"></div>
+                  <img src="images/gf-envelope.png" srcset="images/gf-envelope@2x.png 2x" alt="Claro Club" class="gf-envelope">
+                  
+                  <img src="images/gf-gift-black.png" srcset="images/gf-gift-black@2x.png 2x" alt="Claro Club" class="gf-gift-black">
+                  <div class="phone-screen">
+                    <img src="images/gf-envelope-in.png" srcset="images/gf-envelope-in@2x.png 2x" alt="Claro Club" class="gf-envelope-in">
+                    <img src="images/gf-gift-red.png" srcset="images/gf-gift-red@2x.png 2x" alt="Claro Club" class="gf-gift-red">
+                  </div>
+                  <img src="images/iphone-mockup.png" srcset="images/iphone-mockup@2x.png 2x" alt="Mi Claro" class="img-phone-device">
+                </div>
+                
+              </div>
+              
+            </figure>
+            <figure class="fig-text">
+              <h4 class="subtitle">Claro Club</h4>
+              <h2 class="title">Adherite,<br>sumá puntos,<br>y canjealos</h2>
+              <p class="arrow-text"><img src="images/gf-arrow-text.png" srcset="images/gf-arrow-text@2x.png 2x" alt="Consulta tus movimientos"> Consultá tus movimientos</p>
+            </figure>
+          </div>
+
+          <div class="hero-slide slide-04">
+            <figure class="fig-graphics">
+              <div class="phone">
+                <div class="phone-device">
+                  <div class="gf-plus-red gf-plus-red-2"></div>
+                  <div class="gf-plus-red"></div>
+                  <div class="gf-dash-vertical"></div>
+                  <div class="gf-dash-horizontal"></div>
+                  <img src="images/gf-wifi.png" srcset="images/gf-wifi@2x.png 2x" alt="Mi Claro" class="gf-wifi">
+                  <div class="phone-screen">
+                    <img src="images/gf-wifi-white.png" srcset="images/gf-wifi-white@2x.png 2x" alt="Mi Claro" class="gf-wifi-in">
+                    <img src="images/gf-padlock.png" srcset="images/gf-padlock@2x.png 2x" alt="Mi Claro" class="gf-padlock">
+                  </div>
+                  <img src="images/iphone-mockup.png" srcset="images/iphone-mockup@2x.png 2x" alt="Mi Claro" class="img-phone-device">
+                </div>
+              </div>
+
+            </figure>
+            <figure class="fig-text">
+              <h4 class="subtitle">Servicios para tu casa</h4>
+              <h2 class="title">Configurá tu clave wifi<br>y contratá packs de tv</h2>
+            </figure>
+          </div>
+
+        </div>
+        
+        <div class="dots-container"></div>
+        <div class="slider-nav"></div>
+
+      </div>
+    </section>
+    <section id="section-help" class="page-scroll">
+      <div class="container">
+        <h4 class="title">Conocé más</h4>
+        <div class="video-container">
+          <video controls="" id="video-usuario" class="video" poster="video/play.jpg" width="100%" height="100%">
+            <source src="video/como-crear-usuario.mp4" type="video/mp4">
+            <source src="video/como-crear-usuario.webm" type="video/webm">
+            <source src="video/como-crear-usuario.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+            <p>Video is not visible, most likely your browser does not support HTML5 video</p>
+          </video>
+        </div>
+        <div class="need-help">
+          <img src="images/gf-contact.png" srcset="images/gf-contact@2x.png 2x" alt="¿Necesitas ayuda?" class="icon-contact">
+          <h2 class="title">¿Necesitas ayuda?</h2>
+          <p class="dots">...</p>
+          <p><b>Chateá</b> con nosotros,<br>estamos para ayudarte.</p>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-top">
+          <a href="https://asistencia.claro.com.ar/soporte/categoria/mi-claro" target="_blank" class="footer-btn"><img class="icon" src="images/icon-info-white-xs.png" srcset="images/icon-info-white-xs@2x.png 2x" alt="Consejos"> Consejos útiles</a>
+          <a href="javascript:openChat()" class="footer-btn"><img class="icon" src="images/icon-chat-white-xs.png" srcset="images/icon-chat-white-xs@2x.png 2x" alt="Chat">Chat en línea</a>
+        </div>
+        <div class="footer-bottom">
+          <a href="https://www.claro.com.ar" target="_blank" class="brand"><img src="images/claro-logo-footer.png" srcset="images/claro-logo-footer@2x.png 2x" alt="Claro"></a>
+          <p class="footer-text">Todos los derechos reservados, Claro 2020</p>
+        </div>
+      </footer>
+    </section>
+    
+    
+
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(function() {
+        $.scrollify({
+          section : ".page-scroll",
+        });
+      });
+
+      jQuery(document).ready(function ($) {
+        $('.hero').slick({
+          dots: true,
+          appendDots:'.dots-container',
+          infinite: true,
+          speed: 500,
+          cssEase: 'linear',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 8000,
+          draggable: true,
+          arrows: true,
+          appendArrows: '.slider-nav',
+          prevArrow: '<img src="images/gf-arrow-slider.png" srcset="images/gf-arrow-slider@2x.png 2x" alt="Next">',
+          nextArrow: '<img src="images/gf-arrow-slider.png" srcset="images/gf-arrow-slider@2x.png 2x" alt="Next">',
+        });
+      });
+
+      $('.close-btn').on('click',function() {
+        $(this).closest('#msgModal').fadeOut();
+      })
+
+    </script>
+    <script type="text/javascript" src="https://chat.claroarg.s1gateway.com/pe/f2c92ca5078f71a842967de017631e6163adabfda080fe8e44398c487f8e29deca5b930c2ab1565a"></script>
+    <script> 
+      if (navigator.serviceWorker.controller) { 
+           console.log("Active service worker found, no need to register"); 
+      }else{ 
+         // Register the service worker 
+        navigator.serviceWorker.register('serviceworker.js', { scope: './' }).then(function (reg) { 
+          console.log("Service worker has been registered"); 
+        });
+      }       
+      </script>
+
+  </body>
+</html>

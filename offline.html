@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es" translate="no">
+  <head>
+    <meta name="google" content="notranslate">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap-modal.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='manifest' href='manifest.json'>
+
+    <title>Mi Claro</title>
+  </head>
+  <body>        
+
+    <nav class="nav-miclaro">
+      <a href="https://www.claro.com.ar" target="_blank" class="brand"><img src="images/claro-logo.png" srcset="images/claro-logo@2x.png 2x" alt="Claro"></a>
+      <a href="#LINK_MIMO_REGISTRAR" id="btn-crear" class="btn btn-primary" style="display: none;">Crear tu usuario</a>
+    </nav>
+    <section id="section-home" class="section-home page-scroll">
+      <div class="container">
+        <div class="content animate__animated animate__fadeIn">          
+          <h2 class="title" style="font-size: 35px;margin-top: 50px;">Mi Claro necesita conexión a internet<br>para funcionar</h2>      
+          <!-- <p class="description">Todos tus servicios de Claro,<br>a tu disposición y sin gastar datos</p> -->          
+          <a href="javascript:actualizar()" class="btn btn-cta" style="margin: auto; margin-top: 50px;">Actualizar</a>
+        </div>       
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(function() {
+        $.scrollify({
+          section : ".page-scroll",
+        });
+      });
+
+      jQuery(document).ready(function ($) {
+        $('.hero').slick({
+          dots: true,
+          appendDots:'.dots-container',
+          infinite: true,
+          speed: 500,
+          cssEase: 'linear',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 8000,
+          draggable: true,
+          arrows: true,
+          appendArrows: '.slider-nav',
+          prevArrow: '<img src="images/gf-arrow-slider.png" srcset="images/gf-arrow-slider@2x.png 2x" alt="Next">',
+          nextArrow: '<img src="images/gf-arrow-slider.png" srcset="images/gf-arrow-slider@2x.png 2x" alt="Next">',
+        });
+      });
+
+      function actualizar(){
+        window.location.reload(false); 
+      }
+
+    </script>
+
+    <script> 
+      if (navigator.serviceWorker.controller) { 
+           console.log("Active service worker found, no need to register"); 
+      }else{ 
+         // Register the service worker 
+        navigator.serviceWorker.register('serviceworker.js', { scope: './' }).then(function (reg) { 
+          console.log("Service worker has been registered"); 
+        });
+      }       
+      </script>
+  </body>
+</html>

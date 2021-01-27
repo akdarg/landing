@@ -1,0 +1,20 @@
+{
+    "dir": "ltr",
+    "lang": "es",
+    "name": "Mi Claro",
+    "short_name": "Mi Claro",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://mimo-landing-miclaro-miclaro-mobile-ar-desa.osen01-apps.claro.amx/",
+    "background_color": "#000000",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [{
+        "src": "images/icono144.png",
+        "sizes": "144x144"
+      }],
+    "url": "https://mimo-landing-miclaro-miclaro-mobile-ar-desa.osen01-apps.claro.amx/"
+}
